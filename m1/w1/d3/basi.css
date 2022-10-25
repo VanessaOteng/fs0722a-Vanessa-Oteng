@@ -1,0 +1,67 @@
+/*
+Anatomia di un blocco CSS
+Selettore{
+    proprietà/regole: valore; <-(istruzione)
+    proprietà/regole: valore; <-(istruzione)
+}
+*/
+/* dare sempre una classe o in id (attributo) ai tag che vogliamo modificare in CSS*/
+div{/*peso: 1 => tag*/
+    color:red;
+    
+}
+
+.testoblu{/*peso: 10 => classe*/
+    color: blue; /*Questo rimane perchè la specificità è più alta*/
+}
+
+div{
+    color: green;/* in caso di conflitto la regola più in basso vince*/
+}
+
+#parola3{/*peso: 100 => id*/
+    font-weight: bold;
+    color: purple 
+}
+
+/*Quindi ID batte CLASSE e CLASSE batte il Tag*/
+
+/* Selezione Multipla o gerarchica*/
+
+/*div div{
+    background-color: bisque;
+
+}*/
+
+div div, div span{ /* 1 + 1 = 2, 1 + 1 = 2 */
+    background-color: bisque;
+
+}
+
+#menu li{
+    background-color: red;
+}
+
+#menu li > ul li{
+    background-color: yellow;
+}
+*{/* l'asterisco selezione assolutamente tutto quindi va usato con prudenza*/
+    font-size: 2rem;
+}
+
+/* ul#menu.classe-prova.classe-prova2{la specificità diveta molto alto se faccio così*/
+
+
+.quadrati-gialli.quadrati-con-bordo div{/*peso 10 + 10 + 1*/
+    background-color: purple;
+    border: 1px solid black;
+}
+
+.quadrati-gialli{/*10 + 1*/
+    width: 100px;
+    height: 100px;
+    background-color: yellow ;
+}
+
+
+

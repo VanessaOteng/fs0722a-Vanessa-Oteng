@@ -61,3 +61,15 @@ a{
     text-decoration: none;/*Rimuove la Sottolineatura di un link*/
     color: #2a77c4;
 }
+.feet{
+    background-color: #000;
+    padding: 16px;
+    color:white ;
+    
+}
+.foot-link{
+    display: block;
+    text-align: center;
+    color: white;
+
+}

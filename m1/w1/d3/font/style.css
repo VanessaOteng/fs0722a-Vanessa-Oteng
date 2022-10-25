@@ -1,0 +1,22 @@
+:root{
+    font-size: 18px;
+}
+#primo-paragrafo{
+    font-size: 20px;
+}
+#secondo-paragrafo{
+    font-size: 1rem /*dimensione decimale 1rem sono 16px, pari al numero di pixel defini all'elemento root*/
+}
+#terzo-paragrafo{
+    font-size:16px;
+}
+#quarto-paragrafo{
+    font-size: 25px;
+}
+#quarto-paragrafo{
+    font-size: 1em;/*la dimensione in px e prelebata dall'elemento parent*/
+}
+
+/*I pixel vanno utillizzati per i blocchi e le div*/
+/*i rem e em vanno utilizzati sui font*/
+/*i vh vanno anch'esse utilizzate per i blocchi*/

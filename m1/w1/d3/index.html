@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basi.css"><!--Es 3: Quello da utillizzare effettivamente per i CSS-->
+    <title>Lezione CSS</title>
+    <!-- Es 2: <style>
+        div{
+            color: green;
+        }
+    </style>-->
+</head>
+<body>
+    <div id="parola">Testo</div><!--l'id va messo sempre senza spazio e sono anche case sensitive, mettere sempre parole minuscole-->
+    <div class="testoblu sfondorosso">Testo</div><!--per creare più classi per lo stesso elemento basta mettere uno spazio -->
+    <div id="parola3">Testo</div>
+    <div class="testoblu">Testo</div>
+    <!-- ES 1: <div style="color:red; background-color:blue">Ciao</div> = CSS inline, è obsoleto, può però essere utile per i template email -->
+
+
+    <div>
+        <div> div > div</div>
+    </div>
+    <div>
+        <span> div > span</span>
+    </div>
+
+    <ul id="menu" class="classe-prova classe-prova2">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item
+        <ul>
+            <li>subitem</li>
+            <li>subitem</li>
+        </ul>
+        </li>
+    </ul>
+
+    <div class="quadrati-gialli">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        
+    <div class="quadrati-gialli quadrati-con-bordo">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    
+</body>
+</html>
