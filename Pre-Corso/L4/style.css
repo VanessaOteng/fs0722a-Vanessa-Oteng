@@ -1,0 +1,31 @@
+.child{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: orange;
+    margin: 5px;
+    font-size: 3em;
+    padding: 10px;
+
+}
+.second{
+    align-self: flex-end;/*per far si che un elemento child faccia di testa sua*/
+}
+
+#container{
+    display: flex; /*per creare un layout flexbox*/
+    flex-direction: row;/*per scegliere l'asse principale del flexbox-->*/ /*Main Axis: Verticale*/
+    /*Cross Axis: Orrizzontale è perpendicolare all'asse principale*/  
+    flex-wrap: wrap; /*nel caso in cui ci sia un overflow utilizziamo questo per mandare a capo*/
+    justify-content: center; /*per modificare la modalità di disposizione solo per l'asse principale ovvero in riga, in orizzontale*/
+    align-items: center; /*per modificare la modalità di disposizione solo per l'asse verticale ovvero in colonna*/
+    /*se invece il mio flex-direction: colomn; allora 
+    justify-content: sara per modificare la dispozione verticale
+    e align-items: sara per modificare la dispozizione in orizzontale*/
+    height: 85vh;
+    
+   
+    /*align-content:center ;/*serve per modificare la disposizione quando utillizziamo il flex-wrap per far andare a capo*/
+
+}
+

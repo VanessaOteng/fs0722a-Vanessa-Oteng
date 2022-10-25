@@ -21,6 +21,7 @@
         body{
             margin:0;
             font-family: 'Roboto', sans-serif;
+            background-color: aliceblue ;
 
         }
 
@@ -34,6 +35,10 @@
             overflow: hidden;
             
             
+        }
+        .t1{
+            align-items: center;
+            border: 1px solid black;
         }
         img{
             width: 100%;
