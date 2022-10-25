@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
+        .my-h3{
+            margin:4em;
+        }
+        #special-p{
+             font-size:0.8em;
+        }
+        .special-p{
+            font-size:10em;
+        }
+
+        h3{
+            margin:2em;
+            font-family: 'Lato', sans-serif;
+            
+        }
+        h1{
+            font-family: 'Lato', sans-serif;
+        }
+
+        body{
+            margin:0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        div{
+            padding:12px;
+        }
+        .inner-content{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            overflow: hidden;
+            
+            
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            color:rgb(208, 92, 14)
+        }
+        h1:hover{
+            color:#6495ed;/* si utilizza hover quando l'elemento cambia stato con il passaggio del mouse*/
+        }
+
+        .input-field{
+            display: block;
+            width: 100%;
+        }
+
+        #footer-wrapper{
+            max-width: 400px;/*max width è per definire la grandezza massima che gli elementi nella form possono assumere*/
+            margin: 0 auto ;/*margin: 0 auto; è per centrare il form, 0 per su e giù, e auto a destra e a sinistra*/
+        }
+        footer{
+            width: 100%;
+            background: linear-gradient(120deg, #ff7f50, #6495ed);/*è possibile applicare pure dei Gradient utilizzando il css: background: linear-gradient(direzione(in gradi), colore1, colore2);*/
+        }

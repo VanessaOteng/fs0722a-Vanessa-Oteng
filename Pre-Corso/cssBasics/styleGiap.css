@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-section{
+    padding: 20px;
+    
+}
+.image-container{
+    height: 500px;
+    width: 100% ;
+    background-image: url(../img/monte-unzen.jpeg);
+    background-repeat: no-repeat; /*<- serve per non far ripertere l'immagine piu volte*/
+    background-size:cover; /*<- per incollare l'immagine alla div*/
+    
+
+
+}
+h1{
+    font-family: 'Prata', serif;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h3{
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.autore{
+    font-weight: 600;
+    font-style: italic;
+}
+h5{
+    padding: 22px;
+    margin-bottom: 0px;
+    margin-top: 56px;
+    color:black;
+    border-radius: 6px; /*border-radius per arrotondare i bordi*/
+    background:linear-gradient(to right, #b1afb5, #2a77c4  )
+}
+ul{
+    list-style: none; /*list-style per rimuovere o modificare i puntini*/
+    padding-left: 0;
+   
+    
+}
+li{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-bottom: 5px;
+    border-bottom-color:#dfdfdf ;
+   
+    
+}
+a{
+    text-decoration: none;/*Rimuove la Sottolineatura di un link*/
+    color: #2a77c4;
+}
