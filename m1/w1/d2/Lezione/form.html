@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <form action="" method="post">
+
+        <input name="nome" type="text" placeholder="Inserisci il tuo Username">
+        <input name="password" type="password" placeholder="Inserisci la Password">
+        <input name="number" type="number" placeholder="Inserisci il numero">
+        <hr>
+
+        <label for="consenso">Accetto il trattamento dei dati</label>
+        <input id="consenso" type="checkbox"> <!--La id="cosenso" collega la label alla checkbox-->
+        <hr>
+
+        <select name="ciyy">
+            <option value="">--</option>
+            <option value="roma">Roma</option>
+            <option value="milano">Milano</option>
+            <option value="napoli">Napoli</option>
+        </select>
+        <hr>
+
+        <textarea name="messaggio" cols="30" rows="10" placeholder="Inserisci un Messaggio"></textarea>
+
+        <button name="invia">Invia</button><!--il type è di default di tipo submit se non viene specificato-->
+        <button type="button">bottone fake</button>
+        <button type="reset">Resetta il form in cui si trova</button> 
+        
+        <video>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            <!--Bisogna mettere tutti e due i formati perchè alcuni siti non suppotano una o l'altro-->
+        </video>
+
+    </form>
+    
+</body>
+</html>

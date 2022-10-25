@@ -1,0 +1,61 @@
+body{
+    background-color: azure;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    
+}
+header{
+    padding-left: 20px;
+    padding-bottom: 20px;
+   /* background-color: #83e3f4;*/
+   background:linear-gradient(to right,  #83e3f4 , #ff2751);
+
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 200px ;
+}
+h1{
+    margin-bottom: 30px;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+   
+}
+main{
+    margin-left: 20px;
+}
+
+.main-menu{
+    text-decoration: none;
+    color: #ff2751;
+    font-size: 20px;
+    
+}
+ul{
+    padding-left: 20px;
+}
+p{
+    display: block;
+}
+video{
+    width: 240px;
+    height: 320px;
+}
+.iscriviti{
+    border: 1px
+    
+}
+#info{
+    display: inline;
+}
+#feet{
+    padding: 20px;
+    /*background-color: #ff2751;*/
+    background:linear-gradient(to right, #ff2751, #83e3f4);
+    
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle</title>
+</head>
+<body>
+    <style>
+        table{
+            width: 100%;
+        }
+        table td, table th{
+            border: 1px solid black
+        }
+    </style>
+
+    <table>
+        <caption>Descrivo di cosa tratta la tabella</caption>
+        <thead>
+        <tr><!--Table Row-->
+            <th>Nome </th><!--Table Head-->
+            <th>Cognome</th>
+            <th>Anni</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Vanessa</td><!--Table description-->
+            <td>Oteng</td>
+            <td>20</td>
+        </tr>
+        <tr>
+
+            <td>Mattia</td>
+            <td>Magnani</td>
+            <td>30</td>
+
+        </tr>
+        </tbody>
+        <tfoot><!--Riga Conclusiva-->
+            <tr>
+                <td>Numero utenti</td>
+                <td colspan="2">2</td><!--colspan per allineare la tabella in colonna-->
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">2-5</td><!--rowspan per allineare la tabella in riga-->
+        <td>3</td>
+        
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+      <tr>
+        <td colspan="2">7-8</td>
+        <td>9</td>
+     </tr>
+    </table>
+
+    
+</body>
+</html>
