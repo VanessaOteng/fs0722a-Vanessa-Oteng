@@ -89,6 +89,9 @@ ul{
 footer{
     text-align: left;
 }
+figcaption{
+    opacity: 0.5;
+}
 
 
 
