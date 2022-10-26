@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+body{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+#logo{
+    height: 70px;
+    padding: 10px;
+}
+
+
+.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    height: 100px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.sub-title{
+    color:#135d5d;
+    background-color: rgb(245, 239, 221);
+    border-top: 1px solid rgb(245, 196, 133) ;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 50px;
+    
+}
+
+main{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    
+
+}
+p{
+    display: block ;
+}
+video{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    
+}
+.feat{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: rgb(240, 84, 53);
+    
+}
+.link{
+    text-align: left;
+    border-left: 2px solid rgb(245, 196, 133) ;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+a{
+    color:#135d5d
+}
+h3{
+    text-align: left;
+}
+.list{
+    text-align: left;
+    padding-top: 25px;
+    border-top: 1px solid rgb(132, 223, 235);
+    
+
+}
+ul{
+    padding-left: 15px;
+}
+.metodo{
+    text-align: left;
+    padding-top: 25px;
+    border-top: 1px solid rgb(132, 223, 235);
+    
+}
+.lorem{
+    padding-left: 15px;
+}
+footer{
+    text-align: left;
+}
+
+
+
+
