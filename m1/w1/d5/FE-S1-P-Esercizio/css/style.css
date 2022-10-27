@@ -1,0 +1,78 @@
+/* Your styles here */
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap');
+
+body{
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #393d31;
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+
+    
+    
+
+}
+
+
+
+
+
+/* Header */
+.logo-div{
+    background-color: black;
+    padding:0px;
+    width: 500px;
+    height: 116px;
+    text-align: center;
+    
+    
+    
+    
+}
+.logo1{
+    width: 150px;
+    padding: 35px;
+    
+    
+
+}
+.head-div{
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    height: 350px;
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    
+}
+
+h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+
+    line-height: 1;
+}
+.p-general{
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.65;
+}
+
