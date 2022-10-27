@@ -1,0 +1,230 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(../img/sfondo.png);
+    /*background-repeat: no-repeat;*/
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    
+    
+    
+
+
+}
+
+/* HEADER */
+header{
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    background-image:linear-gradient(to top, #316D85, #4496B7);
+    font-size: 20px;
+    color: white;
+    box-shadow: -4px 4px 5px #666;
+
+}
+h3{
+    
+    font-weight:bold;
+    margin-bottom: 40px;
+}
+.logo{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.lista-head{
+    line-height: 30px;
+    list-style-type: none;
+    
+}
+.head-link{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* MAIN */
+
+main{
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: -4px 4px 5px #666;
+    text-align: left;
+   
+}
+.div-main{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 50px;
+}
+.info{
+    color: #969696;
+    margin-bottom: 20px;
+    padding-right: 90px;
+    padding-left: 0;
+
+}
+.text-main{
+    line-height: 30px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+    
+}
+.link-text1{
+    text-decoration: none;
+    color: #9C2E70;
+    font-weight: bold;
+}
+.p2{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+ul{
+    padding-left: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+ol{
+    padding-left: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+table{
+    margin:auto;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+
+}
+
+th{
+    border: 1px solid white;
+    padding: 30px;
+    color: white;
+    background-color: #4065C5;
+}
+td{
+    border: 1px solid white;
+    padding: 20px;
+}
+.tr-pari{
+    background-color: #EEEEEE;
+    border-bottom: 2px solid #d3cece;
+    border-top: 2px solid #d3cece;
+
+}
+tfoot{
+    padding: 3px;
+    border-top: 2px solid #4065C5;
+}
+.link-text2{
+    color: #6BB0D3;
+    font-weight: bold;
+}
+iframe{
+    border-radius: 40px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.greybox{
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #DDDDDE;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.iscriviti{
+    background-color: #4065C5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+}
+input{
+    width: 200px;
+    height: 20px;
+    padding-top: 8px;
+}
+.greybox2{
+    text-align: left;
+    padding: 20px;
+    background-color: #DDDDDE;
+    margin-bottom: 30px;
+    line-height: 30px;
+    border: 1px solid #d3cece; 
+    
+}
+.date{
+    text-align: right;
+    padding-top: 20px;
+}
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+footer{
+   
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    display: block;
+    padding: 20px;
+    padding-bottom: 50px;
+    
+    
+}
+.div-foot{
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0.8;
+    background-image: linear-gradient(to top, #2e2727,#313a7c);
+    box-shadow: -4px 4px 5px #666;
+    
+}
+.foot-text{
+    opacity: 1;
+
+
+}
+.foot-link{
+    color:magenta;
+    opacity: 1;
+}
