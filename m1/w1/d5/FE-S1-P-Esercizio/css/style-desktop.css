@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap');
 
 body{
-    width: 500px;
+    width: 100%;
     /*border: 1px solid black;*/
     margin: auto;
     font-family: 'Open Sans', sans-serif;
@@ -16,13 +16,15 @@ body{
 .logo-div{
     background-color: black;
     padding: 0;
-    width: 500px;
+    width: 100%;
     height: 116px;
+    text-align: left;
 }
 
 .logo1{
     width: 150px;
     padding: 35px;
+    
     
     
 
@@ -31,7 +33,7 @@ body{
     background-image: url(../images/banner.jpg);
     background-position: center;
     height: 390px;
-    width: 500px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -42,15 +44,20 @@ h1{
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
-    padding-top: 50px;
+    padding-top: 90px;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 25px;
 
     line-height: 1;
 }
+.p1{
+    padding-left: 240px;
+    padding-right: 240px;
+    line-height: 1.65;
+}
 .p-general{
-    padding-left: 80px;
+    padding-left: 20px;
     padding-right: 80px;
     line-height: 1.65;
 }
@@ -78,12 +85,33 @@ h1{
 
 /*MAIN*/
 .main-div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.round-img{
+    width: 50%;
+    /*border: 1px solid;*/
+    height: 500px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: right;
+    padding-right: 20px;
+    
+}
+.list-div{
     padding-top: 50px;
+    width: 50%;
+    /*border: 1px solid;*/
+    height: 500px;
+    padding-bottom: 50px;
+    text-align: left;
 }
 h3{
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 25px;
+    padding-left: 20px;
 
 }
 .sott2{
@@ -95,18 +123,20 @@ h3{
 }
 .circle{
     border-radius: 100%;
-    margin-top: 25px;
-    width: 350px;
+    margin-top: 0px;
+    width: 450px;
     margin-bottom: 20px;
-    height: 350px;
+    height: 450px;
 }
 .flip-circle{
     background-color: transparent;
     perspective: 1000px;
-    width: 350px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     /*border: 1px solid;*/
-    margin: auto;
+    padding-bottom: 50px;
+    text-align: right;
+    margin-left: 160px;
 }
 .flip-circle-inner{
     position: relative;
@@ -139,13 +169,13 @@ h3{
     background-color: #e22d0e;
     color: white;
     margin-top: 55px;
-    margin-bottom: 55px;
+    margin-bottom: 80px;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
     padding-top: 55px;
     font-size: 2.2rem;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 blockquote{
     padding-left: 60px;
@@ -162,23 +192,30 @@ cite{
 .small-pp{
     font-style: normal;
     font-size: 13px;
+    text-align: center;
+}
+.flex2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .sezioni{
-    width: auto;
-    height: 350;
+    width: 350px;
+    height: 350px;
     
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
     margin-bottom: 50px;
-    box-shadow: 0 0 3px #666;
+    box-shadow: 0 0 2px #666;
     
 }
 .foto1{
     width: 100%;
-    height: 50%;
+    height: 60%;
 }
 .foto1:hover{
     opacity: 0.5;
@@ -187,13 +224,11 @@ h4{
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 18px;
-    padding-top: 30px;
+    padding-top: 18px;
     font-size: 1.1rem;
 
 }
 .section-p{
-    padding-left: 60px;
-    padding-right: 60px;
     line-height: 1.65;
     font-size: 1.1rem;
     color: #393d31;
@@ -205,17 +240,24 @@ a{
 /*FOOTER*/
 
 .foot-div{
-    height: 450px;
+    height: 400px;
     background-color: #25a2c3;
     color: white;
-    margin-top: 80px;
+    margin-top: 25px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
+
 .contacts{
     text-decoration: underline;
     color: #c8e7f0;
 }
 .foot-p{
-    line-height: 1.9;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 60px;
+    font-size: 1rem;
+    padding-left: 120px;
 }
 .contacts2{
     text-decoration: none;
@@ -223,12 +265,15 @@ a{
     
 }
 hr{
-    width: 200px;
+    width: 220px;
     height: 1px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: white;
     border: none;
     margin-bottom: 40px;
+    margin-right: 100px;
+    
+    
     
 }
 
