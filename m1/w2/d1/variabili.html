@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>//procede dall'alto verso il basso, non c'e conflitto, e tutte le istruzioni vengono eseguiti una dopo l'altra
+
+        var a; // se non do un valore alla variabile, ha una valore Undefined
+        console.log(a);
+        var x = 1; // var= parola chiave, x= token(identificatore, nomeVariabile, Senza spazi, il primo carattere della variabile non puo essere un numero, $ e _ invece possono essere utillizzati) 
+        console.log(x);
+
+        x = 2; //dopo aver inizializzato una variabile la  var non va più messa.
+        console.log(x);
+
+        a = 6; // posso assegnare un valore ad una variabile anche successivamente
+
+        var y = 1, u = 1; // possiamo concatenare con la ,
+        
+        document.write(x + y);
+        console.log(x + y);
+
+
+        //Tipi Di Dato : Tipizzazione
+
+        var numero = 5;// variabile numerica
+        var stringa = 'Ciao';// variabile Stringa
+        var array = [1,2,3,'ciao',[]];// variabile Array: è tipo una lista e può contenere qualsiasi tipo di dato, viene riconosciuta con la parentesi quadra
+        var oggetto = {
+            nome: 'Mario',
+            cognome: 'Rossi',
+            anni: 30,
+        }//lista di coppie nome: valore, le variabili hanno un nome, e può contenere qualsiasi tipo di dato, viene riconosciuta con la parentesi graffa.
+        var booleano = true; // può essere o true o false, senza virgolette
+
+
+        console.log(typeof numero) ;// serve a richiedere, che tipo di dato è la variabile inserito
+
+        //mescoliamo tutto
+        var booleano = 'true'; // e una stringa, non è un booleano perchè è tra gli apicetti
+        var numero2 = '2';// non è un numero
+
+        //concatenamento
+
+        var saluto = 'Ciao';
+        var nome = 'Marco';
+        console.log(saluto +' '+ nome);// se uso il + su 2 stringhe ottengo un concatenamento
+
+        //parkour
+        var t = 2;
+        var k = '2';
+        var l = '2a';
+
+        console.log(t + k);// t viene convertita in stringa, quindi avviene un concatenamento, non si sommano i numeri ma si affiancano.
+
+        console.log(t * k);// se invece li moltiplico, questa volta lo string si converte in numero e lo moltiplica se contiene solo numeri.
+
+        console.log(t * l);// se invece moltiplico una stringa che contiente una lettera con un numero ottengo un NaN(ovvero Not a Number)
+
+        //concatenatore numeri convertendoli in stringa
+        console.log(5 + ' ' + 5);
+        console.log(String(5) + String(5)); //<--utilizziamo questo
+
+
+
+    </script>
+    
+</body>
+</html>

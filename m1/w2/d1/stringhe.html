@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var html = '<div class="prova">Prova1</div>';
+        document.write(html);
+                                /*a comunque bene l'utilizzo di sia apici singoli che doppi basta non fare var = html2 = "<div class="prova">Prova1</div>" si risolve questo problema con l'escape var html = "<div class=\"prova"\>Prova1</div>": utilizzando il backlash*/
+        var html2 = "ciao";
+        console.log(html2);
+
+        // interpolazione oppure template string
+        console.log(nome); //non esiste ancora, quindi è undifined perchè definiamo la variabile solamente dopo
+
+        var nome = 'mario';
+
+        console.log('Benvenuto' + nome + 'come stai?');
+        console.log(`Benvenuto ${nome}, come stat?`);//option 9: per i mini apicetti(backtick), modo alternativo, più utilizzato
+
+        
+
+    </script>
+    
+</body>
+</html>

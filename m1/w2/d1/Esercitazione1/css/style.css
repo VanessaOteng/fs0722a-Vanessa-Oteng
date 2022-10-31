@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+    background-color: aliceblue;
+    
+}
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
