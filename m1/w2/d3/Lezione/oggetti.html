@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione - Oggetti</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        
+        let obj = {}
+        {
+
+        let pizza = {
+            gusto: 'Margherita',
+            prezzo: 5,
+            mostraPrezzo: function(valuta){//è un metodo
+                console.log(`La pizza ${this.gusto} è di ${this.prezzo}${valuta}`)
+            }
+        }
+        document.write(pizza.gusto); //lettura
+        pizza.gusto = 'Diavola'; //scrittura
+        document.write(pizza.gusto);
+        //document.write(pizza) = non posso leggere un oggetto, perchè non riesce a trasformarlo in stringa
+        console.log(pizza);
+
+        pizza.mostraPrezzo('$');//quando una variabile contiene una funzione, metto le parentesi tonde per eseguirle
+        //un metodo è una funzione dentro un oggetto,
+        }
+
+        /*function mostraPrezzo(){//Questa funzione è diversa dalla funzione dentro al oggetto perchè quello è un metodo
+            console.log('Funzione mostraPrezzo')
+        }
+        mostraPrezzo();*/
+
+        function Pizza(_gusto, _prezzo){//Libretto Istruzioni per generare Pizze
+            this.gusto = _gusto;
+            this.prezzo = _prezzo;
+            this.mostraPrezzo = function(valuta){
+                console.log(`La pizza ${this.gusto} è di ${this.prezzo}${valuta}`)
+                
+            }
+        };
+
+        let margherita = new Pizza('Margherita', 5);  
+        let diavola = new Pizza('Diavola', 1);
+        
+        margherita.mostraPrezzo('£');
+        diavola.mostraPrezzo('$');
+
+        Pizza.prototype.stile = 'Napoletana'; // uso prototype per modificare l'oggetto;
+
+
+
+
+    </script>
+    
+</body>
+</html>

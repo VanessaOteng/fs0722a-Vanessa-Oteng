@@ -2,17 +2,22 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("===============Es.1================")
 
 function es1(num3, num4){
+  
   if(num3 > num4){
-    console.log(+num3+ ' è più grande di '+num4);
+    return(+num3+ ' è più grande di '+num4);
+  }if(num3 < num4){
+    return(+num4+ ' è più grande di '+num3);
   }else{
-    console.log(+num4+ ' è più grande di '+num3);
+    return('i due numeri sono uguali')
   }
 }
-console.log(es1(5, 10));
+console.log(es1(36, 10));
 
 console.log("===============Es.2================")
 
@@ -23,13 +28,13 @@ console.log("===============Es.2================")
 /* SCRIVI QUI LA TUA RISPOSTA */
 function es2(num5){
   
-  if(num5 != 5){
-    console.log(+num5+ ' : not equal');
+  if(num5 !== 5){
+    return(+num5+ ' : not equal');
   }else{
-    console.log(+num5+ ' : equal');
+    return(+num5+ ' : equal');
   }
 }
-console.log(es2(5));
+console.log(es2(8));
 console.log("===============Es.3================")
 
 
@@ -40,10 +45,10 @@ console.log("===============Es.3================")
 /* SCRIVI QUI LA TUA RISPOSTA */
 function es3(num6){
   if(num6 % 5){
-    console.log(+num6+ ' : non divisibile per 5');
+    return(+num6+ ' : non divisibile per 5');
 
   }else{
-    console.log(+num6+ ' : divisibile per 5');
+    return(+num6+ ' : divisibile per 5');
   }
 }
 console.log(es3(10));
@@ -59,13 +64,13 @@ function es4(num1, num2){
   let somma = num1 + num2;
   let sottrai = num1 - num2;
   if(num1==8){
-    console.log('Numero 1 è = 8');
+    return('Numero 1 è = 8');
   }if (num2==8) {
-    console.log('Numero 2 è = 8');
+    return('Numero 2 è = 8');
   }if(somma==8){
-    console.log('La somma di: ' +num1+ '+' +num2+ ' è 8');
+    return('La somma di: ' +num1+ '+' +num2+ ' è 8');
   }if(sottrai==8){
-    console.log('La sottrazione di: ' +num1+ '-' +num2+' è 8');
+    return('La sottrazione di: ' +num1+ '-' +num2+' è 8');
   }
   
 }
@@ -84,9 +89,9 @@ function es5(totalShoppingCart){
   let promo = 'Spedizione Gratuita';
   const costoSpedizione = 10;
   if (totalShoppingCart >= 50){
-    console.log('Utente ha il diritto alla: ' +promo);
+    return('Utente ha il diritto alla: ' +promo);
   }else{
-    console.log('I costo totale dei tuoi prodotti non supera 50 quindi il costo della Spedizione è: ' +costoSpedizione);
+    return('I costo totale dei tuoi prodotti non supera 50 quindi il costo della Spedizione è: ' +costoSpedizione);
     
 
   }
@@ -106,13 +111,15 @@ function es6(totalShoppingCart){
   let blackFriday = 20;
   const costoSpedizione = 10;
   if (totalShoppingCart >= 50 && totalShoppingCart*blackFriday/100 >= 50){
-    console.log('Utente ha il diritto alla: ' +promo);
+    return('Utente ha il diritto alla: ' +promo);
   }else{
-    console.log('I costo totale dei tuoi prodotti non supera 50 quindi il costo della Spedizione è: ' +costoSpedizione);
+    return('I costo totale dei tuoi prodotti non supera 50 quindi il costo della Spedizione è: ' +costoSpedizione);
 
   }
 }
 console.log(es6(50));
+console.log("===============Es.7================")
+
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -121,6 +128,31 @@ console.log(es6(50));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let numeri = [47, 36, 52];
+numeri.sort(function(a, b){
+  return a - b;
+}).reverse;
+console.log(numeri);
+/*
+let num7= 30;
+let num8= 9;
+let num9= 10;
+if(num7 >= num8){
+  if(num9 >= num7){
+    console.log(num9, num7, num8);
+  }else if(num9 >= num8){
+  console.log(num7, num9, num8);
+  }else{
+  console.log(num7, num8, num9);
+}
+}else if(num9 >= num8){
+  console.log(num9, num8, num7);
+}else if(num8 >= num7){
+  console.log(num8, num9, num7);
+}else{
+  console.log(num8, num7, num9);
+}*/
+console.log("===============Es.8================")
 
 
 /* ESERCIZIO 8
@@ -128,12 +160,33 @@ console.log(es6(50));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function es8(valore){
+  if(typeof(valore) === 'number'){
+  return(valore+ ' è di tipo : ' +typeof(valore));
+  }else {
+    return('il valore inserito non è di tipo number')
+  }
+}
+console.log(es8(89));
+console.log("===============Es.9================")
+
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function es9(num10){
+  if(num10 % 2 == 0){
+    return('il numero: ' +num10+ ' è pari');
+  }else{
+    return('il numero: ' +num10+ ' è dispari');
+
+  }
+}
+console.log(es9(10));
+console.log("===============Es.10================")
+
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -148,6 +201,16 @@ console.log(es6(50));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 10
+  if (val < 10 && val > 5) {
+      console.log(val+ " : è Meno di 10");
+    } else if (val < 5) {
+      console.log(val+ " : è Meno di 5");
+    } else {
+      console.log(val+ " : è Uguale a 10 o maggiore");
+    }
+console.log("===============Es.11================")
+
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -157,30 +220,54 @@ const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
-}
+  
+};
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+me.city = 'Toronto';
+console.log(me);
+console.log("===============Es.12================")
+
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
+console.log("===============Es.13================")
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.skills[2] ;
+console.log(me.skills);
+console.log("===============Es.14================")
+
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let arrayNum = [];
+console.log(arrayNum,  'ArrayVuota');
+
+arrayNum = [1,2,3,4,5,6,7,8,9,10];
+console.log(arrayNum);
+console.log("===============Es.15================")
+
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+arrayNum[9] = 100;
+console.log(arrayNum);
+

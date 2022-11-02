@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione - Array</title>
+</head>
+<body>
+
+    <script>
+
+       let arr = [];
+       
+       let numeri = [10,50,90,'ciao',52];
+
+       console.log(numeri[0]);// 0 è il primo numero
+       console.table(numeri);//lettura
+       numeri[0] = 70;//scrittura
+       console.table(numeri);
+
+       //length
+
+       console.log(numeri.length)// per la lunghezza dell'array
+       console.log(numeri[numeri.length-1]);//per ottenete sempre l'ultimo numero dell'array
+        
+       let str = 'ciao'
+       console.log(str.length);// funziona anche con le stringhe
+       console.log(str[0]);
+       console.log(str.replace('c','x'));
+
+       //scoprire il tipo di dato
+       console.log(typeof(numeri));// restituisce object
+       console.log(Array.isArray(numeri));//isArray è un metodo dell'elemento Array per avere certezza che il dato sia un array
+        if(numeri[6]){//controlla se la poz 6 è vuota 
+        numeri[6] = 800;
+        console.log(numeri)
+        }
+
+
+
+        //metodi array Ordinare valori Numerici
+       let numeriOrdinati = numeri.sort(function(a,b){return a - b})//per fare l'opposto bisogna fare b - a oppure utilizzare il metodo .reverse()
+
+       console.log(numeriOrdinati);
+
+       //dalla Fine
+       numeri.push(20);//aggiunge alla fine dell'array
+       console.log(numeri);
+
+       let eliminato = numeri.pop()//elimina dalla fine dell'array
+
+       console.log(numeri, 'è stato eliminato il numero' +eliminato);
+
+       //dall'inizio
+       numeri.unshift(20);//aggiunge all'inizio dell'array
+       console.log(numeri);
+        numeri.shift(); // elimina all'inizio dell'array
+       console.log(numeri);
+
+       //eliminazione/sostituzione da un indice a scelta
+
+       let start = 1;
+       let qty = 1;
+       numeri.splice(start,qty);
+       console.log(numeri);
+       numeri.splice(start,qty,4444);//elimino e sostituisco
+       console.log(numeri);
+
+       
+
+
+
+
+
+
+    
+
+
+
+    </script>
+    
+</body>
+</html>

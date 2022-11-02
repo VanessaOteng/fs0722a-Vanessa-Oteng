@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+    let animali = ['gatto','cane','anatra','orso'];
+
+    //forEach : metodo degli array
+    animali.forEach(function(animale, i){
+        document.write(i + ' ' + animale + ' - ');
+    })//metodo degli array per simulare un for
+
+    document.write('<hr>');
+    //for of: metodo degli array
+    for(let animale of animali){
+        document.write(animale + ' - ');
+
+    }
+    document.write('<hr>');
+
+    //for of: posso utilizzarlo per ciclare una stringa
+
+    let stringa = 'testo da ciclare';
+    for(let lettera of stringa){
+        document.write(lettera + '<br>');
+    };
+
+    let numeri = [1,2,3,4,5];
+    let numeriX2 = numeri.map(function(n){
+        return n * 2;
+    })//restituisce un nuovo array a differenza del forEach
+    console.log(numeri, numeriX2);
+
+    let animaliB = animali.map(function(a){
+        return '<b>' +a+ '</b>'
+        //return a.toUpperCase();
+    })
+    console.log(animaliB);
+
+
+    let utenti = [
+        {
+            id: 1,
+            nome:'Mario',
+            cognome:'Rossi',
+            anni:30
+        },
+        {
+            id: 2,
+            nome:'Marco',
+            cognome:'Beschi',
+            anni:25
+        },
+        {
+            id: 3,
+            nome:'Simona',
+            cognome:'Tudisco',
+            anni:24
+        },
+        {
+            id: 4,
+            nome:'Raffaele',
+            cognome:'Caravetta',
+            anni:28
+        },
+    ]
+    
+    let ricerca = utenti.filter(function(u){
+        return u.anni > 24;
+        //restituisce un array
+    })
+    console.log(ricerca);
+
+    let result = utenti.filter(function(u){
+        return u.id == 3;
+        //restituisce un singolo oggetto
+    })
+    console.log(result);
+
+
+    let animaliStr = 'gatto,cane,anatra,orso';
+    let animaliSplittati = animaliStr.split(',');
+    console.log(animaliSplittati.join('#'));
+
+    //filter, find, map, forEach, forOf e reduce, indexOf
+    //se dobbiamo cicliare utilizziamo for
+    // se cicliamo un array forEach o forOf
+    //per ciclare gli oggetti forIN
+
+
+
+
+    </script>
+    
+</body>
+</html>
