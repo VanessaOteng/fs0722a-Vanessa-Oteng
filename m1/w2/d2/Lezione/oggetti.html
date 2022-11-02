@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        let oggetto = {}
+
+        {// le metto in un blocco cosi da poter utilizzare il stesso nome sotto
+        let diavola = {
+            gusto: 'Diavola',
+            prezzo: 1
+            
+        }
+
+        let margherita = {
+            gusto: 'Margherita',
+            prezzo: 5
+        }
+        }
+
+
+        //costruttore dell'oggetto
+        function Pizza(g,p){// g,p sono 2 parametri
+            this.gusto = g;
+            this.prezzo = p; // this è la variabile/oggetto che andremo a creare
+        }
+
+        let margherita = new Pizza('Margherita', 5);//new: creazione di una nuova istanza
+        let diavola = new Pizza('Diavola', 1);
+
+        console.table([margherita, diavola]);// per renderlo un array di oggetti
+
+        //FUNZIONI
+
+        saluta(); //è soggetta all' hoisting
+
+        function saluta(){// è un set di istruzioni
+            document.write('ciao');
+
+        }
+        saluta();
+
+        function salutoBold(){
+            return `<b>Ciao</b>`;
+        }
+        let saluto = salutoBold();//è meglio se lo mettiamo in una variabile
+        console.log(saluto);
+        document.write(saluto);
+
+        //Funzioni Parametriche
+
+        function testoBold(testo){
+            return `<b>${test}</b>`;
+        }
+        let testoB = testoBold('prova');
+        console.log(testoB);
+
+        function testoTag(testo, nomeTag){
+            return `<${nomeTag}>${test}</${nomeTag}>`;
+        }
+
+        document.write(testoTag('tag1', 'div'));
+        document.write(testoTag('tag2', 'span'));
+
+        function somma(a,b){
+            return a + b
+        }
+        console.log (somma(4,7));
+
+        function isEven(numero){
+            return numero % 2 == 0;
+        }
+        console.log(isEven(3));
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

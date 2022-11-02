@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        let a = 2;
+        
+        let b = a + a;// si puo fare e il valore di b sarà 4
+
+        b = 2; // b = 2 elimina il precedente valore e assegna il nuovo valore 2 a b
+        console.log(b);
+        b += 2; // non svuota il valore che c'e già, ma lo somma ad a(4+2) mantiene il valore precedente
+        console.log(b);
+        b -= 2; // sarà 4-2
+        console.log(b);
+        b *= 2; //2*2
+        console.log(b);
+        b /= 2; //4/2
+
+        //CONCATENAMENTO Stringhe
+
+        let html = ''; // se invece ho una stringa e utilizzo il += avverà un concatenamento
+        html += '<div>';
+        html += '<ciao>';
+        html += '</div>';
+        console.log(html);
+
+
+        //CONFRONTO
+
+        let c = 10;
+        console.log(c > 10);//false: c è superiore a 10
+        console.log(c >= 10);//true: c è superiore a 10 ma è uguale a 10 quindi true
+        console.log(c == 10);//true: perchè è totalmente uguale a 10
+
+        console.log(c != 10);//false: perhè c non è diverso da 10
+        console.log(c < 100 && c > 5);//true: perchè c è inferiore a 100 e superiore a 5. &&-> operatore AND
+        //true vs true = true
+        console.log(c < 100 && c < 5);// true vs false = false
+        console.log(c > 100 || c > 5); // ci da true anche se una dei due operatori è vera. ||-> operatore OR
+        // false vs true = true
+
+
+        console.log(!(c < 100));//operatore NOT, in ogni caso ribalta il risultato di un boolean, il c e minore di 100 e quindi il risultato dovrebbe essere true ma visto che abbiamo un operatore not che lo precede avremo come risultato un false.
+        console.log('============')
+
+        let bool = true;
+        console.log(!bool);
+
+        function xor(a, b){
+            return(a || b) && !(a && b);
+        }//per fare un operatore XOR
+
+         
+
+         let r = 5;
+         let t = '5';
+         console.log(r == t);// deve essere uguale solo il valore, anche il tipo di dato può essere diverso
+         console.log(r === t);//il triplo uguale significa strettamente uguale ovvero che anche il tipo di dato deve essere uguale
+         console.log(r !== 5)//strettamente diverso, true se il dato e/o il tipo di dato sono diversi
+
+         let str = '';
+         if (str){// una stringa vuota è = a false
+            console.log('non vedrai questo messaggio')
+         }
+
+         let num = 0;
+         if (num){// lo zero mappa a false
+            console.log('non vedrai questo messaggio')
+         }
+
+         //OPERATORE TERNARIO
+         let anni = 30;
+         let accesso = anni >= 18 ? 'Consentito' : 'Non consento';// l'operatore ? serve a scivere in una stringa se la condizione che lo precede è true i due punti sono l'else;
+         console.log(accesso);
+
+         //OPERATORE DI COALESCENZA
+         let htmlElement = documento
+         .getElementById('test') || '<div></div>'
+
+         //se si vuole andare a capo, bisogna andare a capo prima della del punto
+
+
+
+
+    
+
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

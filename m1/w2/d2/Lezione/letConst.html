@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        //LET
+        var x = 0;
+        {// un set di graffe è un blocco
+            console.log(x);
+        }
+
+        let y = 0;
+        {
+            console.log(y);
+        }
+
+        {
+            let u = 1; // le let sono soggette al blockscope: vuol dire che il suo valore non puo essere tirato fuori dal blocco in cui e definito ed inizzializzato
+        }
+        //console.log(u);// non possiamo vedere il valore di u fuori dal blocco 
+
+        // se un let è inizzializzato al esterno, quel valore appartiene a tutto lo script, se invece un let viene inizzializzato al'interno di un blocco per il resto dello script quel valore non esiste.
+
+        {
+            var f = 1 // le variabili invece ignorano il blockscope quindi anche se viene inizializzato in un blocco può essere visualizzato anche al esterno.
+        }
+        console.log(f);
+        
+        // le variabili sono soggette al HOISTING= sollevamento, quando viene richiamata una variabile, viene effettuata una un ricerca in alto e in basso e poi dopo viene eseguito
+
+  
+        console.log('================');
+
+        let i = 2;
+        {
+            let i = 3;// se lavoriamo con le let evitiamo le ripetizzioni di variabili.
+            console.log(i);
+
+        }
+        console.log(i);
+        // da ora lavoriamo sempre con le let
+
+        //CONSTANATI
+
+        const NOME_COSTANTE = 6; // il testo di una costante deve essere tutto sempre maiuscolo e avere il tratto basso per separare il testo
+
+        //NOME_COSTANTE = 7 //non posso riassegnare il valore di una costante
+        console.log(NOME_COSTANTE);
+
+        const PIZZA = {
+            gusto: 'Margherita',
+            prezzo: 5
+        }// se invece il const è un oggetto posso cambiare il valore dei variabili all'interno.
+        PIZZA.gusto = 'Diavola'
+        console.log(PIZZA); 
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

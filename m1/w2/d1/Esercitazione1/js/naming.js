@@ -11,7 +11,10 @@ console.log($pet);
 var _pet = 'il leone';
 console.log(_pet);
 var _pet2 = 'la pantera';
-console.log(_pet2);
+document.write(_pet2);
+
+console.log(info());
+
 
 
 

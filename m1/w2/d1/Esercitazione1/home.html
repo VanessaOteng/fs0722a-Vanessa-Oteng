@@ -6,13 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
+    
 </head>
 <body>
-    <h1>Benvenuti</h1>
-    <h3>Questa è la nostra prima Esercitazione con JavaScript</h3>
-    <p>&darr;Clicca l'Immagine&darr;</p>
 
-    <a href="index.html"><img src="img/Unknown.png" alt="Immagine-logo-JavaScript"></a>
+    <!--Header-->
+    <header>
+    <h1>Benvenuti</h1>
+    <h4>Questa è la nostra prima Esercitazione con JavaScript</h4>
+    </header>
+    <!--Main-->
+    <main>
+    <form action="index.html">
+        <div class="forma">
+            <div class="s1">
+                <input type="text" placeholder="Inserisci il tuo nome" id="nome">
+            </div>
+        </div>
+
+        <div class="forma">
+            <div class="s2">
+                <input type="text" placeholder="Inserisci il tuo cognome" id="cognome">
+            </div>
+        </div>
+
+        <div class="forma">
+            <div class="s3">
+                <input type="number" placeholder="Quanti anni hai" id="eta" >
+            </div>
+        </div>
+
+    <div class="forma">
+    <button class="btn">Invia</button>
+    </div>
+</form>
+    
+   
+    </main>
+
+
+
+    
+
+    <!-- <a href="index.html"><img src="img/Unknown.png" alt="Immagine-logo-JavaScript"></a>-->
+
+ <!-- <script>
+   
+    /*let persona ={
+        nome: document.getElementById("nome"),
+        cognome: document.getElementById("cognome"),
+        età: document.getElementById("eta")
+    };*/
+
+    function info(){
+        let nome = document.getElementById("nome");
+        let cognome = document.getElementById("cognome");
+        let età = document.getElementById("eta");
+
+        let persona = "Nome:" + nome + "Cognome:" + cognome + "Età:" + età;
+        console.log(persona);
+    }
+
+   </script>
+   --> 
     
 </body>
 </html>
