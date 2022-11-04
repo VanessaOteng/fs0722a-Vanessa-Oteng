@@ -25,21 +25,23 @@
 
     <!--Main-->
     <main>
+        <!--Visuale-->
         <div id="container">
             <input type="text" id="visuale">
             <div id="invisible">
-            <iframe id="sus" width="400" height="150" src="https://www.youtube.com/embed/O91DT1pR1ew?rel=0&amp;controls=0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="sus" width="400" height="150" src="https://www.youtube.com/embed/O91DT1pR1ew?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+        <!--Totale Tasti-->
         <div id="tot">
-            <!--Special-->
+            <!--Special : Nascoste-->
             <div id="nascondi">
             <div class="special" onclick="aggiungiRadQ(this)"><p class="smol">&#8730;</p></div>
             <div class="special" onclick="aggiungiQ(this)"><p class="smol">x&#178;</p></div>
             <div class="special" onclick="aggiungiC(this)"><p class="smol">x&#179;</p></div>
             <div class="special" onclick="aggiungiLog(this)"><p class="smol">log</p></div>
             <div class="special" onclick="aggiungiLn(this)"><p class="smol">ln</p></div>
-            <div class="special"><p class="smol">&#960;</p></div>
+            <div class="special" onclick="aggiungiPi(this)"><p class="smol">&#960;</p></div>
             <div class="special" contenuto="(" onclick="aggiungiNum(this)"><p class="smol">(</p></div>
             <div class="special" contenuto=")" onclick="aggiungiNum(this)"><p class="smol">)</p></div>
             <div class="special" id="ghost"></div>
@@ -50,7 +52,7 @@
             <div class="special" onclick="aggiungiFraz(this)"><p class="smol" >1/x</p></div>
             <div class="special" id="ghost"></div>
             </div>
-            <!--Normal-->
+            <!--Normal : Visibili-->
             <div class="num"  onclick="canc(this)"><p class="valore" id="c"> c</p></div>
             <div class="num"  onclick="backSpace(this)"> <p class="valore" id="del"> ⌫ </p></div>
             <div class="num"  onclick="Perce(this)" id="operatori"> <p class="valore" id="perc"> %</p></div>
@@ -70,7 +72,7 @@
             <div class="num" onclick="bigger()"> <p class="valore" id="enlarge"> ◱ </p></div>
             <div class="num" contenuto="0" onclick="aggiungiNum(this)"> <p class="valore" id="zero"> 0</p></div>
             <div class="num" contenuto="." onclick="aggiungiNum(this)" id="operatori"> <p class="valore" id="dot"> .</p></div>
-            <div class="num" contenuto="=" onclick="uovoDiPasqua(this);evalTot(this) " > <p class="valore" id="equals"> =</p></div>
+            <div class="num" contenuto="=" onclick="uovoDiPasqua(this);evalTot(this)" > <p class="valore" id="equals"> =</p></div>
 
         </div>
 
@@ -83,11 +85,7 @@
     </footer>
 </div>
 
-
-
-
-    
-
+     <!--Connessione Al JavaScript-->
     <script src="js/calcolatrice.js"></script>
 </body>
 </html>

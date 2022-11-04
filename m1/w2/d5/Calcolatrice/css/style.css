@@ -19,68 +19,59 @@ body{
 
 }
 
-#complete{
-    background-image: url('../media/bg4.gif');
-    background-size: cover;
+#complete{ /* GOD DIV */
+    background-image: url('../media/bg4.gif'); /* aggiungo al mio div completo la gif per lo sfondo. */
+    background-size: cover; 
     width: 500px;
-    /*height: 965px;*/
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 50px 90px;
-    cursor: url('../media/point1.png'), auto;
+    cursor: url('../media/point1.png'), auto; /* imposto un cursore personalizzato */
     
 }
 
-h1{
+/*Header*/
+h1{/*Titolo Pagina*/
     font-size: 3.2rem;
     text-align: center;
     color: white;
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', cursive; /*font per il titolo*/
     
 }
 h1:hover{
-    background-image: url('../media/cool.gif');
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: url('../media/hand.png'), auto;
+    background-image: url('../media/cool.gif');/*quando passo sopra sul h1 aggiunge una gif sopra l'h1.*/
+    background-size: cover;/*Copre tutto l'h1 con la gif,*/
+    -webkit-background-clip: text; /* appiccica la gif al titolo, questo comando ha bisogno del prefisso webKit per renderlo compatibile su chrome, firefox e safari*/
+    -webkit-text-fill-color: transparent;/*Infine rende trasparente i punti in cui non è presente del testo*/
+    cursor: url('../media/hand.png'), auto;/*imposto un altro cursore personalizzato per le cose cliccabili*/
     
 }
 #link1{
-    text-decoration: none;
+    text-decoration: none; /*tolgo la sottolineatura al link del h1*/
 }
 
-#titolo{
+#titolo{ /*div del header*/
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-
     padding-top: 50px;
     padding-bottom: 20px;
     font-size: 3.5rem;
-    text-align: center;
-    /*background-image: url('../media/bg2.gif');
-    background-size: cover;*/
-    font-family: 'Bowlby One SC', cursive;
-    
+    text-align: center;   
 }
 
 
-#sus{
+#sus{ /*da ignorare*/
     object-fit: contain;
     height: 104px;
     border-radius: 15px;
     margin:0;
-    
-    
-
 }
 
 
 
-
-#container{
+#container{/* div Parent della Visuale*/
     margin: auto;
     width: 408px;
     position: relative;
@@ -88,39 +79,41 @@ h1:hover{
     border-radius: 15px;
 
 }
-#container #visuale{
+
+#container #visuale{/*Input test per la Visuale*/
      /*border: 1px solid red;*/
      border-radius: 15px;
      width: 400px;
      height: 100px;
      font-size: 3rem;
-     font-family: 'Press Start 2P',cursive;
+     font-family: 'Press Start 2P',cursive; /*font della Visuale*/
      background: linear-gradient(to right, #c73c3c 0% 1em, #c29a2c  1em 2em, #58af59 1em 3em, #4dbbc5 1em 4em, #2d2c74 1em 5em, #7b2e82 1em 6em,
       #552640 1em 100%);
+      /*^Ho usato lo stesso metodo delle gif, e la linear-gradient per cambiare il colore di ogni lettera^*/
       -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-     caret-color: white;
+     caret-color: white;/*per rendere la linea del caret bianca*/
     /* border: none;*/
-     border: none;
+     border: none;  /*annullo le impostazioni di default dei input text*/
      resize: none;
      outline: none;
      
 
 }
-#container #invisible{
+
+#container #invisible{/*da ignorare*/
     position:absolute;
     right:0;
     top:0;
     border-radius: 15px;
     width: 405px;
     margin: auto;
-    display: none;
-
+    display: none; 
 }
 
+/*MAIN*/
 
-
-.special{
+.special{/*classe delle div nascoste*/
     border: 1px solid white;
     width: 60px;
     height: 60px;
@@ -135,57 +128,61 @@ h1:hover{
     linear-gradient(-45deg, #ffffff00 50%, #7e7e7e 0 60%, #ffffff00 0) right/400% 100% no-repeat;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
-    transition: 0.5s;
-    cursor: pointer;
+    transition: 0.5s; /*per rendere transizione che avviene al passo del mouse in 0.5s*/
     
 }
+
 .special:hover{
-    background-position: left;
+    background-position: left;/*sposta la background a sinistra*/
+    cursor: url('../media/hand.png'), auto;/* aggiungo cursore personalizzato*/
 }
+
 #ghost{
     border: 0;
     background: none;
 }
-.smol{
+
+.smol{/*classe dei caratteri mathematici*/
     font-size: 1.1rem;
     padding-top: 18px;
 }
 
 
-.num{
-    
+.num{/*classe dei div che del main*/
     width: 101px;
     /*height: 111px;*/
     color: white;
     /*border: 1px solid white;*/
     border-radius: 10px;
-
     background:
     linear-gradient(-45deg, #ffffff  20%, #000000 0 20%, #ffffff  0) right/300% 100% no-repeat,
     linear-gradient(-45deg, #ffffff00 50%, #7e7e7e 0 60%, #ffffff00 0) right/400% 100% no-repeat;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
     transition: 0.5s
-
-       
+    /*^stesse cose che c'erano prima nella div nascosta^*/
 }
 .num:hover{
     background-position: left;
     cursor: url('../media/hand.png'), auto;
 }
-main{
+
+
+main{/*modifiche generali al main*/
     padding-bottom: 25px;
     padding-top: 30px;
     
 }
-#nascondi{
+
+#nascondi{/*div Parent delle div nascoste*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    display: none;
+    display: none; /*Per non Mostrarle*/
 }
-#tot{
+
+#tot{/*div parent di tutti i div per i calcoli*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -193,7 +190,7 @@ main{
     margin-top: 20px;
     
 }
-.valore{
+.valore{/*classi dei paragrafi per modificare la dimensione e centrare*/
     display: block;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -203,11 +200,13 @@ main{
     
     
 }
-#del{
+
+#del{/*modifiche del paragrafo col simbolo del backspace*/
     margin-top:27px;
     margin-right: 6px;
 }
-#enlarge{
+
+#enlarge{/*modifiche del paragrafo col simbolo di ingrandire*/
     
     margin-right: 6px;
     margin: 0;
@@ -215,21 +214,20 @@ main{
     font-size: 4rem;
 }
 
-.feet{
+/*FOOTER*/
+
+.feet{/*Div del Footer*/
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
     padding-top: 10px;
     padding-bottom: 50px;
     border-top: 1px solid white;
-    
     font-size: 0.7rem;
     text-align: center;
     color: white;
-    /*background-image: url('../media/bg2.gif');
-    background-size: cover;*/
-    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Monoton', cursive;
 }
-#pFeet{
+#pFeet{/*paragrafo del footer*/
     margin-top: 30px;
     opacity: 0.6 ; 
 }
