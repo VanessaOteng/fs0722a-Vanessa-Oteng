@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcolatrice - VanessaOteng</title>
+</head>
+<body>
+    <!--Header-->
+    <div id="complete">
+    <header>
+        <div id="titolo">
+            <a href="index.html" id="link1">
+            <h1>
+             CALCOLATRICE
+            </h1>
+            </a>
+        </div>
+
+    </header>
+
+    <!--Main-->
+    <main>
+        <div id="container">
+            <input type="text" id="visuale">
+            <div id="invisible">
+            <iframe id="sus" width="400" height="150" src="https://www.youtube.com/embed/O91DT1pR1ew?rel=0&amp;controls=0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="tot">
+            <!--Special-->
+            <div id="nascondi">
+            <div class="special" onclick="aggiungiRadQ(this)"><p class="smol">&#8730;</p></div>
+            <div class="special" onclick="aggiungiQ(this)"><p class="smol">x&#178;</p></div>
+            <div class="special" onclick="aggiungiC(this)"><p class="smol">x&#179;</p></div>
+            <div class="special" onclick="aggiungiLog(this)"><p class="smol">log</p></div>
+            <div class="special" onclick="aggiungiLn(this)"><p class="smol">ln</p></div>
+            <div class="special"><p class="smol">&#960;</p></div>
+            <div class="special" contenuto="(" onclick="aggiungiNum(this)"><p class="smol">(</p></div>
+            <div class="special" contenuto=")" onclick="aggiungiNum(this)"><p class="smol">)</p></div>
+            <div class="special" id="ghost"></div>
+            <div class="special" onclick="aggiungiSin(this)"><p class="smol">sin</p></div>
+            <div class="special" onclick="aggiungiCos(this)"><p class="smol">cos</p></div>
+            <div class="special" onclick="aggiungiTan(this)"><p class="smol">tan</p></div>
+            <div class="special" onclick="aggiungiExp(this)"><p class="smol" >exp</p></div>
+            <div class="special" onclick="aggiungiFraz(this)"><p class="smol" >1/x</p></div>
+            <div class="special" id="ghost"></div>
+            </div>
+            <!--Normal-->
+            <div class="num"  onclick="canc(this)"><p class="valore" id="c"> c</p></div>
+            <div class="num"  onclick="backSpace(this)"> <p class="valore" id="del"> ⌫ </p></div>
+            <div class="num"  onclick="Perce(this)" id="operatori"> <p class="valore" id="perc"> %</p></div>
+            <div class="num" contenuto="/" onclick="aggiungiNum(this)" id="operatori"> <p class="valore" id="diviso"> &divide;</p></div>
+            <div class="num" contenuto="7" onclick="aggiungiNum(this)"> <p class="valore" id="seven"> 7</p></div>
+            <div class="num" contenuto="8" onclick="aggiungiNum(this)"> <p class="valore" id="eight"> 8</p></div>
+            <div class="num" contenuto="9" onclick="aggiungiNum(this)"> <p class="valore" id="nine"> 9</p></div>
+            <div class="num" contenuto="*" onclick="aggiungiNum(this)" id="operatori"> <p class="valore" id="molt"> &times;</p></div>
+            <div class="num" contenuto="4" onclick="aggiungiNum(this)"> <p class="valore" id="four"> 4</p></div>
+            <div class="num" contenuto="5" onclick="aggiungiNum(this)"> <p class="valore" id="five"> 5</p></div>
+            <div class="num" contenuto="6" onclick="aggiungiNum(this)"> <p class="valore" id="six"> 6</p></div>
+            <div class="num" contenuto="-" onclick="aggiungiNum(this)"> <p class="valore" id="minus"> -</p></div>
+            <div class="num" contenuto="1" onclick="aggiungiNum(this)"> <p class="valore" id="one"> 1</p></div>
+            <div class="num" contenuto="2" onclick="aggiungiNum(this)"> <p class="valore" id="two"> 2</p></div>
+            <div class="num" contenuto="3" onclick="aggiungiNum(this)"> <p class="valore" id="three"> 3</p></div>
+            <div class="num" contenuto="+" onclick="aggiungiNum(this)" id="operatori"> <p class="valore" id="plus"> +</p></div>
+            <div class="num" onclick="bigger()"> <p class="valore" id="enlarge"> ◱ </p></div>
+            <div class="num" contenuto="0" onclick="aggiungiNum(this)"> <p class="valore" id="zero"> 0</p></div>
+            <div class="num" contenuto="." onclick="aggiungiNum(this)" id="operatori"> <p class="valore" id="dot"> .</p></div>
+            <div class="num" contenuto="=" onclick="uovoDiPasqua(this);evalTot(this) " > <p class="valore" id="equals"> =</p></div>
+
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="feet"><p id="pFeet">&copy; . Copyright By VanessaOteng</p></div>
+
+    </footer>
+</div>
+
+
+
+
+    
+
+    <script src="js/calcolatrice.js"></script>
+</body>
+</html>

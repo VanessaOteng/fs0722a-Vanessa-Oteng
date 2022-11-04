@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Monoton&family=Press+Start+2P&display=swap');/* @keyframes fadeIn {
+    0% { opacity: 1; }//effetto inizio animazione
+    20% { opacity: 0.5; }
+    40% { opacity: 0; }
+    60% { opacity: 0.5; }
+    100% { opacity: 1; }//effetto fine animazione
+  }
+    
+*/
+
+body{
+    text-align: center;
+    width: 500px;
+    /*border: 1px solid black;*/
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    
+
+}
+
+#complete{
+    background-image: url('../media/bg4.gif');
+    background-size: cover;
+    width: 500px;
+    /*height: 965px;*/
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 50px 90px;
+    cursor: url('../media/point1.png'), auto;
+    
+}
+
+h1{
+    font-size: 3.2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Monoton', cursive;
+    
+}
+h1:hover{
+    background-image: url('../media/cool.gif');
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: url('../media/hand.png'), auto;
+    
+}
+#link1{
+    text-decoration: none;
+}
+
+#titolo{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 3.5rem;
+    text-align: center;
+    /*background-image: url('../media/bg2.gif');
+    background-size: cover;*/
+    font-family: 'Bowlby One SC', cursive;
+    
+}
+
+
+#sus{
+    object-fit: contain;
+    height: 104px;
+    border-radius: 15px;
+    margin:0;
+    
+    
+
+}
+
+
+
+
+#container{
+    margin: auto;
+    width: 408px;
+    position: relative;
+    border:1px solid white;
+    border-radius: 15px;
+
+}
+#container #visuale{
+     /*border: 1px solid red;*/
+     border-radius: 15px;
+     width: 400px;
+     height: 100px;
+     font-size: 3rem;
+     font-family: 'Press Start 2P',cursive;
+     background: linear-gradient(to right, #c73c3c 0% 1em, #c29a2c  1em 2em, #58af59 1em 3em, #4dbbc5 1em 4em, #2d2c74 1em 5em, #7b2e82 1em 6em,
+      #552640 1em 100%);
+      -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     caret-color: white;
+    /* border: none;*/
+     border: none;
+     resize: none;
+     outline: none;
+     
+
+}
+#container #invisible{
+    position:absolute;
+    right:0;
+    top:0;
+    border-radius: 15px;
+    width: 405px;
+    margin: auto;
+    display: none;
+
+}
+
+
+
+.special{
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P',cursive;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background:
+    linear-gradient(-45deg, #ffffff  20%, #000000 0 20%, #ffffff  0) right/300% 100% no-repeat,
+    linear-gradient(-45deg, #ffffff00 50%, #7e7e7e 0 60%, #ffffff00 0) right/400% 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.special:hover{
+    background-position: left;
+}
+#ghost{
+    border: 0;
+    background: none;
+}
+.smol{
+    font-size: 1.1rem;
+    padding-top: 18px;
+}
+
+
+.num{
+    
+    width: 101px;
+    /*height: 111px;*/
+    color: white;
+    /*border: 1px solid white;*/
+    border-radius: 10px;
+
+    background:
+    linear-gradient(-45deg, #ffffff  20%, #000000 0 20%, #ffffff  0) right/300% 100% no-repeat,
+    linear-gradient(-45deg, #ffffff00 50%, #7e7e7e 0 60%, #ffffff00 0) right/400% 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s
+
+       
+}
+.num:hover{
+    background-position: left;
+    cursor: url('../media/hand.png'), auto;
+}
+main{
+    padding-bottom: 25px;
+    padding-top: 30px;
+    
+}
+#nascondi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+#tot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.valore{
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 3rem;
+    font-family: 'Press Start 2P', cursive;
+
+    
+    
+}
+#del{
+    margin-top:27px;
+    margin-right: 6px;
+}
+#enlarge{
+    
+    margin-right: 6px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 4rem;
+}
+
+.feet{
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    border-top: 1px solid white;
+    
+    font-size: 0.7rem;
+    text-align: center;
+    color: white;
+    /*background-image: url('../media/bg2.gif');
+    background-size: cover;*/
+    font-family: 'Bowlby One SC', cursive;
+}
+#pFeet{
+    margin-top: 30px;
+    opacity: 0.6 ; 
+}
+
